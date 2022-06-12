@@ -1,0 +1,450 @@
+#HeaderLogo path.mj-logo-character { fill: #ad2e39;
+}
+#HeaderLogo svg { 
+display: block; 
+width: 100%; 
+height: 50px; 
+margin-top: 3.5%;
+padding-bottom: 10px; 
+align-content: center;
+}
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body{
+    background:black;
+    position:relative;
+    width: auto;
+}
+div{
+    padding-top: inherit;
+    padding-bottom: inherit;
+}
+fieldset{
+    border: none;
+    position: relative;
+}
+form{
+    position: relative;
+}
+a{
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+p{
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+option{
+    color: black;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    
+    border: black;
+    border-radius: 4px;
+    box-shadow: 0 8px 6px -6px #555;
+}
+select{
+    color: white;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 6px -6px #555;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 1.8em;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+legend {
+    color: white;
+    font-style: normal;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2.9em;
+    text-transform: uppercase;
+    text-shadow: black 0px 0px 20px;
+}
+label, input, textarea{
+    padding: 1%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input, textarea{
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 6px -6px #555;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 35%;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+textarea{
+    color: white;
+    height: 21em;
+    text-indent: 1em;
+}
+::placeholder{
+    font-style: normal;
+    font-weight: 200;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    color: red;
+    opacity: 50%;
+    text-transform:none;
+    font-style: oblique;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+i{
+    transform: translateY(20px) scale(1);
+    transform-origin: 50% bottom;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.5em;
+}
+i:active{
+    color: white;
+}
+i:hover{
+    transform: translateY(20px) scale(1.8);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sel_box div{
+    padding-bottom: 0em;
+    padding-top: 0em;
+}
+.snow_tech{
+    display: none;
+    justify-content: center;
+}
+.bike_tech{
+    display: none;
+    justify-content: center;
+}
+.arrow{
+    display: contents;
+}
+.height{
+    height: 31.36px;
+}
+.checkbox{
+    box-shadow: none;
+    margin-right: -1em;
+}
+.image{
+    position: relative;
+    margin: auto;
+}
+.image::before{
+    width: 100%;
+    height: 820px;
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-image: url(https://static.evo.com/content/cms/evoacademy/fluidride/ski/r1/5404_evoacademy_ski_mtb_video_video_thumbnail_r1.png);
+    opacity: 0.4;
+    background-size: cover;
+}
+.type_box{
+    display: flex;
+    opacity: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 9em;
+    color: #ad2e39;
+    width: auto;
+    height: 5.7em;
+}
+.type{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.info_box{
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+    align-items: center;
+    color: #ad2e39;
+    width: auto;
+    height: 51em;
+}
+
+.center_box{
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ad2e39;
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px #555;
+    margin-top: 0em;
+}
+.submit{
+    margin: auto;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    opacity: .9;
+    border: black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 0px #000;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+}
+.button{
+    margin: auto;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+    background: #ad2e39;
+    opacity: 1;
+    border: black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 0px #000;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+div .button{
+    display: flex;
+    margin: 0px;
+    border-radius: 30px;
+}
+.button:hover {
+    background-color: rgb(0 255 8);
+}
+.button:active {
+  background-color: #39ad2e;
+  transform: translateY(4px);
+}
+.backBtn{
+    opacity: 1;
+    background: #ad2e39;
+}
+.option_title{
+    text-align: center;
+    color: #ad2e39;
+    font-weight: bold;
+}
+.service_a{
+    padding-left: 1%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bolder;
+    text-transform: initial;
+    font-size: 20px;
+    padding-right: 1%;
+}
+.service{
+    height: 51em;
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+.sel_box{
+    display: flex;
+    position: relative;
+    height: 38em;
+    justify-content: center;
+    background-color: #ad2e39;
+    padding: 4%;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 6px -6px #555;
+    width: 31em;
+    flex-direction: column;
+    padding: 2em;
+}
+.header-nav-section{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 5em;
+    align-items: center;
+}
+.input_align{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    height: 3em;
+}
+.qty{
+    width: 50px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.tenA{
+    margin-left: -5px;
+}
+.ski_snow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 1em;
+    box-shadow: none;
+    align-items: flex-end;
+    width: 100%;
+}
+.radio{
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+    margin: 0px 0em 0px -3em;
+}
+.skier_type{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    text-shadow: none;
+    width: 101%;
+    margin-left: -1px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.skier_type a{
+    width: 30em;
+}
+.boot_info{
+    height: 470px;
+}
+
+.stance{
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 0px 1px #fff;
+}
+.stance_flex{
+    justify-content: space-evenly;
+}
+.parts{
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+.part_box{
+    height: auto;
+    width: auto;
+    align-content: center;
+    margin-bottom: 2em;
+    display: contents;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.part_div{
+    width: 100%;
+}
+.part_input{
+    width: 75%;
+}
+.part_box div{
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase; 
+    margin-bottom: 1em;
+}
+.bike_part{
+    box-shadow: none;
+    background: none;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    margin: auto;
+}
+.alignAll{
+    margin: 20% auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 53vh;
+}
+.button_dec{
+    opacity: 0;
+    display: none;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    justify-content: space-between;
+}
+.fade_out{
+    position: relative;
+    transition: opacity 1.5s ease-out;
+     opacity: 0;
+}
+.fade_in{
+    position: relative;
+     opacity: 1;
+    transition: opacity 1.5s ease;
+}
