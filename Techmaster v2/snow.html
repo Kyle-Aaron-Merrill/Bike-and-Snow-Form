@@ -1,0 +1,817 @@
+<!doctype HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+    margin: auto;
+    max-width: 938px;
+    background-color: whitesmoke; background-image: url('https://static01.nyt.com/images/2019/11/26/travel/26trending-apps01/26trending-apps01-superJumbo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}  
+a,div,fieldset,footer,html,legend{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    color: #000;
+    text-emphasis: bold;
+}
+#HeaderLogo path.mj-logo-character { fill: #ad2e39;
+}
+#HeaderLogo svg { display: block; width: 100%; height: 50px; margin: 0 auto; padding-bottom: 10px; align-content: center;
+}
+.columnsLeft{ width: 50% !important; float: left; vertical-align: top; }
+
+.form-field {display: block;margin:0 0 0 0;line-height: 1.1em; vertical-align: inherit;}
+.columnsRight{ width: 50% !important; float: Right; vertical-align: top;}
+.serviceBody {position: relative; margin: 15px 0; padding: 10;}
+.borderSep{
+    border-color: #ad2e39;
+    border-style: groove;
+    border-width: 2px;
+    padding: 10px;
+    padding-top: 10px;
+}
+fieldset{
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+.boxAlign{
+    margin: 0 0 0 0;
+    padding-bottom: 5px;
+}
+.phNum{
+    padding-right: 65px;
+}
+.date_in{
+    padding-right: 25px;
+}
+.date_out{
+    padding-right: 15px;
+}
+.email{
+    padding-right: 15px;
+}
+.make{
+    padding-right: 5px;
+}
+.mdl{
+
+}
+.weight{
+    padding-right: 10px;
+}
+legend{
+    padding-top: 1px;
+    border-color: #ad2e39;
+    border-style: groove;
+    border-width: 2px;
+    background-color: whitesmoke;
+}
+.textArea{
+    width: 100%;
+    height: 126px;
+}
+.btn{ border: 2px solid #fff; background: #ad2e39; color: #fff; text-decoration: none; width: 50%; text-align: center; font-size: 16px;
+}
+.link{
+    font-size: 16px;
+    background: #ad2e39; color: #fff; text-decoration: none; width: 100px; text-align: center; border-color: #fff; border-width: 1.5px; border-style: solid;padding: 2px; padding-left: 55px; padding-right: 55px;
+}
+footer{
+    margin: 0 auto;
+    max-width: 766px;
+    padding-top: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+.option_bold{
+    font-weight: bold;
+    color: #ad2e39;
+}
+    </style>
+    <head>
+        <div class="header-nav-section" id="HeaderLogo">
+            
+            <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" id="MJLogoSVG" role="img" aria-labelledby="MoosejawHeaderLogo" viewBox="0 0 691.6 121.3">
+                    <title id="MoosejawHeaderLogo">Moosejaw Logo</title>
+                        <g>
+                            <path class="mj-logo-character" id="MJLogoM" d="M 112.6 105.6 c -0.4 -0.2 -0.9 -0.3 -1.2 -0.5 c -0.4 -0.6 -0.9 -1.3 -1.3 -1.9 c -0.4 -3 -0.7 -6 -1.1 -8.9 a 21.72 21.72 0 0 0 0.7 -2.4 V 88.7 c -0.3 -1.1 -0.5 -2.2 -0.7 -3.2 c 0.2 -8.9 0.3 -17.8 0.4 -26.7 a 14.49 14.49 0 0 0 0 -5.1 c 0.3 -2.4 0.3 -2.4 0.7 -15.9 c -0.3 -0.6 -0.5 -1.1 -0.7 -1.6 V 34.1 a 18.16 18.16 0 0 0 1.4 -4.6 V 26.3 c -0.5 -1.4 -1 -2.7 -1.4 -4.1 l 0.3 -2.4 a 11.65 11.65 0 0 1 2 -3.8 c 0.8 -0.4 1.5 -0.7 2.3 -1.1 a 19.74 19.74 0 0 0 4.6 -3.5 c 0.3 -0.6 0.5 -1.1 0.7 -1.6 V 5.5 c -0.7 -1.1 -1.4 -2.2 -2.1 -3.2 c -0.6 -0.6 -1.3 -1.2 -1.9 -1.8 a 4.25 4.25 0 0 0 -1.1 -0.2 c -2.5 0.2 -5 0.8 -6.4 0.8 c -1.2 -0.4 -2.4 -0.7 -3.6 -1.1 H 95.7 a 17.77 17.77 0 0 0 -4.6 1.9 H 89.7 C 88.8 1.4 88 1 87.2 0.5 a 12.52 12.52 0 0 0 -3.9 0 c -0.9 0.4 -1.8 0.8 -2.6 1.2 c -0.5 0.6 -1 1.3 -1.5 1.9 c -1.4 3.8 -2.8 8.7 -4.3 12.2 c -0.7 3 -1.4 6 -2.1 8.9 c -0.5 1 -1 2 -1.4 3 c -0.5 2 -1 4 -1.4 5.9 c -1 2.6 -1.9 5.3 -2.9 7.9 c -0.3 1.4 -0.5 2.7 -0.7 4.1 c -0.5 1.2 -1 2.3 -1.4 3.5 c -0.3 2.1 -0.5 4.2 -0.7 6.2 A 11.39 11.39 0 0 1 62 58.4 c -0.5 0.1 -1 0.1 -1.4 0.2 l -2.7 -6 c -0.3 -1.5 -0.5 -2.9 -0.7 -4.3 c -1 -2.5 -1.9 -5 -2.9 -7.5 c -2.1 -9.2 -2.1 -9.2 -2.8 -10.5 c -2.1 -9.2 -2.1 -9.2 -2.8 -13.8 c -1.1 -2 -1.1 -2 -4.5 -6.2 c 0 -2.2 0.3 -3 0.3 -5.4 c -0.6 -0.9 -1.3 -1.7 -1.9 -2.5 c -0.7 -0.5 -1.5 -1 -2.2 -1.4 A 12.09 12.09 0 0 0 38.6 0.5 h -10 L 27.5 0.2 H 12.2 c -1 0.3 -1.9 0.6 -2.8 0.8 A 36.41 36.41 0 0 0 3.5 0.9 a 9.29 9.29 0 0 0 -1 0.5 A 6.31 6.31 0 0 0 1 3.9 a 24.31 24.31 0 0 0 0.7 6.5 l 1.8 2.1 a 23.36 23.36 0 0 1 4.3 3.3 c 0.5 0.7 1 1.5 1.4 2.1 V 31.7 a 18.66 18.66 0 0 1 0.7 2.2 c 0 5.1 0 5.1 -0.4 7.3 c 0.2 1.3 0.3 2.5 0.4 3.8 c -0.3 4.5 -0.3 4.5 -1 6.9 l 0.3 27.6 c -0.3 1.1 -0.7 8.7 -1.1 10.3 a 15.84 15.84 0 0 0 1.1 4.3 l -0.3 2.4 c -0.7 1.4 -1.4 4.3 -2.1 6 a 70 70 0 0 0 -6.1 5.7 a 14.58 14.58 0 0 0 -0.7 1.9 A 20.46 20.46 0 0 0 0.7 116 c 0.6 0.6 1.2 1.1 1.8 1.6 a 14.61 14.61 0 0 0 3.7 1.2 c 2.1 0.2 4.3 0.3 6.4 0.4 c 1.3 0 2.6 -0.1 3.9 -0.1 c 0.5 -0.2 1 -0.4 1.4 -0.6 a 22.86 22.86 0 0 1 2.5 -0.2 a 12.09 12.09 0 0 0 1.8 0.5 h 2.5 c 1.2 -0.6 2.3 -1.1 3.5 -1.6 a 13.58 13.58 0 0 0 1.2 -1.2 c 0.3 -0.6 0.5 -1.1 0.7 -1.6 v -4.6 c -0.5 -0.8 -1.1 -1.5 -1.6 -2.3 c -3.9 -1.1 -3.9 -1.1 -5.2 -1.7 c -0.7 -0.8 -0.7 -0.8 -1.4 -3 c -0.1 -2.4 -0.2 -4.7 -0.3 -7.1 a 14.58 14.58 0 0 1 -0.7 -1.9 c 0 -24.1 -0.3 -26.5 0 -31.9 c 0.3 -1 0.5 -2 0.7 -3 c 0 -8.7 -0.4 -10 -0.3 -16.6 h 1.5 c 0.5 0.5 1.1 1 1.5 1.4 v 4.6 c 1.8 5.1 1.8 5.1 4.6 15.6 c 1.4 3.8 2.1 7.6 5 16.2 c 0.5 0.9 1 1.8 1.4 2.7 c 0.5 2.1 1 4.1 1.4 6.2 c 0.5 1 1 2 1.4 3 c 0.3 1.6 0.5 3.2 0.7 4.9 A 12.79 12.79 0 0 0 41 101 l 1.2 0.9 a 45.39 45.39 0 0 1 8.2 1.9 h 2.5 c 4.3 -1.3 4.3 -1.3 5.4 -1.9 c 1.2 -1.4 2.5 -2.8 3.7 -4.1 a 65.84 65.84 0 0 0 2.1 -11.3 l 1.8 -2.7 c 0.7 -3.5 1.4 -5.7 2.1 -10.3 c 0.6 -1.5 1.2 -2.9 1.8 -4.3 c 0.5 -2.1 1 -4.1 1.4 -6.2 c 1.4 -3.9 2.9 -7.8 4.3 -11.6 c 0.3 -1.5 0.5 -2.9 0.7 -4.3 c 0.7 -1.6 1.3 -3.2 2 -4.9 A 2.35 2.35 0 0 1 79 42 c 0.3 0.2 0.5 0.3 0.8 0.5 a 8.26 8.26 0 0 1 0.7 1.3 c -0.7 14.6 -1.1 16.2 -1.1 23 c 0.4 2.7 0.7 5.4 1.1 8.1 c -0.7 7.6 -0.7 7.6 -1.1 19.2 c 0.2 1.8 0.3 3.6 0.4 5.4 c -0.4 1.1 -0.7 2.2 -1.1 3.2 c -1.1 1.3 -4.5 4.2 -6 5.9 v 3 c 0.4 1.7 0.7 3.4 1.1 5.1 c 0.4 0.6 0.4 0.6 1.6 1.2 H 80 c 1.3 0.4 2.6 0.7 3.9 1.1 l 5 -0.3 c 1.7 -0.4 3.4 -0.7 5 -1.1 h 3.9 c 0.9 0.3 1.7 0.6 2.5 0.8 l 11.8 0.3 a 6.61 6.61 0 0 0 2.5 -1.3 c 0.3 -0.6 0.6 -1.2 0.9 -1.7 v -6 c -0.3 -0.7 -0.6 -1.4 -0.9 -2 A 19.36 19.36 0 0 0 112.6 105.6 Z" />
+                            <path class="mj-logo-character" id="MJLogoO1" d="M 186.5 80.8 c -0.3 -1.4 -0.5 -2.7 -0.7 -4.1 c -3.6 -7.3 -3.6 -7.3 -5 -9.5 c -1.6 -1.7 -3.2 -3.3 -4.8 -5 c -6.2 -4.3 -6.2 -4.3 -7.7 -4.9 c -1.2 -0.2 -2.4 -0.4 -3.6 -0.5 a 9.9 9.9 0 0 1 -2.8 -1.9 c -1.8 -0.4 -3.6 -0.7 -5.4 -1.1 c -2.9 0.1 -5.8 0.2 -8.7 0.2 c -1.7 0.4 -3.3 0.7 -5 1.1 c -4.2 1.8 -8.4 3.5 -12.7 5.3 c -1.3 1 -2.6 1.9 -3.8 2.9 c -1 1.2 -1.9 2.4 -2.9 3.6 a 21.39 21.39 0 0 1 -2.2 4.9 a 8.65 8.65 0 0 1 -1 0.7 c -0.5 0.9 -1 1.9 -1.5 2.8 c -0.7 2.6 -1.4 5.1 -2.1 7.6 v 6.3 c 0.4 2.1 0.7 4.1 1.1 6.2 c 1 2.3 1.9 4.5 2.9 6.8 c 2.8 4.9 2.8 4.9 4.3 6.8 c 2.4 1.9 4.8 3.8 7.1 5.7 c 1.8 0.7 3.6 1.5 5.4 2.2 c 2.4 0.7 4.8 1.5 7.1 2.1 l 4.7 0.3 a 4.87 4.87 0 0 0 1.1 0.4 c 2.3 -0.1 4.5 -0.1 6.8 -0.2 c 1.7 -0.4 3.3 -0.7 5 -1.1 c 2 -0.7 3.9 -1.5 5.8 -2.2 c 2 -1.3 4.1 -2.5 6 -3.8 a 74.49 74.49 0 0 0 6.5 -6 c 0.5 -1.5 1 -2.9 1.4 -4.3 c 0.7 -1.5 1.5 -2.9 2.2 -4.4 a 20 20 0 0 0 1.4 -1.6 c 0.5 -1.3 1 -2.5 1.4 -3.8 C 186.9 89.4 186.5 87.5 186.5 80.8 Z M 161.3 93.3 c -1 3 -1.9 6.1 -2.9 9.2 a 29.35 29.35 0 0 1 -3 4.5 c -0.5 0.3 -1.1 0.6 -1.7 1 c -1 0.2 -1.9 0.3 -2.9 0.5 c -0.6 -0.2 -1.3 -0.5 -2 -0.7 a 15.36 15.36 0 0 1 -3.2 -3 a 36.38 36.38 0 0 1 -2.2 -4.9 c -0.3 -7.9 -0.7 -10.5 -0.7 -15.5 c 0.2 -1.9 0.4 -3.8 0.7 -5.7 c 0.7 -2.1 0.7 -2.1 1.4 -7 a 27.51 27.51 0 0 0 1.4 -3 a 13.39 13.39 0 0 1 3.7 -2.8 c 0.5 -0.2 1 -0.3 1.4 -0.5 h 2.9 c 0.6 0.4 1.2 0.8 1.9 1.2 c 1 1.3 1.9 2.7 2.9 4.1 a 21.72 21.72 0 0 0 0.7 2.4 c 0.5 4.9 1 9.7 1.4 14.6 A 49.67 49.67 0 0 1 161.3 93.3 Z" />
+                            <path class="mj-logo-character" id="MJLogoO2" d="M 264.2 84.1 c 0 -4.1 0 -4.1 -0.3 -5.5 c -1.4 -3.2 -2.9 -5.4 -5.7 -11.1 c -1.4 -1.7 -1.4 -1.7 -5 -4.7 a 90 90 0 0 0 -8.5 -5.4 c -1.5 -0.6 -2.9 -1.1 -4.4 -1.7 c -1.9 -0.1 -3.8 -0.2 -5.7 -0.2 l -2.9 -0.6 h -7.5 c -2.7 0.6 -5.4 1.1 -8.2 1.6 c -1 0.4 -1.9 0.7 -2.8 1.1 c -2.2 1.2 -4.3 2.4 -6.5 3.6 c -0.5 0.5 -1.1 1 -1.5 1.5 c -0.5 1.1 -1 2.2 -1.5 3.2 c -1.1 0.6 -2.1 1.3 -3.2 1.9 c -0.6 0.5 -1.1 1.1 -1.7 1.5 c -1.4 3.6 -2.9 7.1 -4.3 10.6 c -0.3 1.5 -0.5 3.1 -0.7 4.6 v 4.4 c 0.4 3.2 0.4 3.2 1.8 8.6 c 1 2.4 1.9 4.9 2.8 7.3 c 0.5 0.9 1 1.7 1.5 2.5 c 1.7 1.6 3.4 3.1 5.1 4.7 c 4.3 2.4 4.3 2.4 5.9 3.7 c 2.6 1 5.1 2 7.6 3 c 2.3 0.2 4.5 0.4 6.8 0.5 c 1 0.3 1.9 0.6 2.9 1 c 2.4 -0.1 4.8 -0.1 7.2 -0.2 c 3 -0.9 6 -1.8 8.9 -2.7 c 1.6 -0.7 3.2 -1.5 4.7 -2.2 c 1.8 -1.5 3.6 -2.9 5.3 -4.3 a 65.31 65.31 0 0 0 5.7 -7.4 c 0.5 -1.5 1 -3.1 1.4 -4.6 a 33.35 33.35 0 0 0 2.8 -5.1 V 89.6 a 18.66 18.66 0 0 1 -0.7 -2.2 A 6.51 6.51 0 0 1 264.2 84.1 Z m -25.7 7.8 c -0.4 3 -0.9 5.9 -1.4 8.9 c -1 1.8 -1.9 3.6 -2.9 5.5 c -1.2 0.8 -2.5 1.6 -3.7 2.5 a 23.35 23.35 0 0 0 -2.5 0.7 a 22.66 22.66 0 0 1 -4 -2.6 c -0.6 -0.9 -1.3 -1.7 -1.9 -2.6 c -1.4 -6.2 -2.1 -11.1 -2.9 -13.3 V 87.7 c 0.7 -1.9 0.7 -1.9 1.4 -6.5 c 0.1 -2.6 0.2 -5.2 0.4 -7.8 a 21.72 21.72 0 0 1 0.7 -2.4 a 15.53 15.53 0 0 1 3.2 -3.5 l 2.7 -1.5 h 3.3 l 1.5 0.6 c 0.6 0.5 1.2 1 1.9 1.5 c 0.4 0.6 0.9 1.2 1.4 1.9 l 1.8 6 v 5.1 c 0.3 2.1 0.7 4.3 1.1 6.5 C 238.5 89 238.5 90.4 238.5 91.9 Z" />
+                            <path class="mj-logo-character" id="MJLogoS" d="M 323.6 85.6 a 71 71 0 0 0 -7 -4.8 l -3 -1.2 h -3.5 a 16 16 0 0 0 -2.1 -0.5 c -1 -0.7 -2 -1.4 -3 -2 c -1.3 -0.5 -2.6 -1.1 -3.8 -1.6 c -1 -0.7 -2 -1.5 -2.9 -2.2 a 7.53 7.53 0 0 1 -1.8 -3 c 0.1 -0.5 0.2 -0.9 0.3 -1.4 c 1 -0.8 1.9 -1.6 2.9 -2.4 l 3 -1.5 h 3.5 c 1.3 0.5 2.5 1 3.7 1.5 c 0.9 0.6 1.8 1.2 2.7 1.7 c 0.5 0.7 1.1 1.4 1.6 2.1 c 0.5 1.1 1.1 2.3 1.6 3.4 c 1 1.1 1.9 2.1 2.8 3.2 l 1.2 0.6 h 1.4 a 5.36 5.36 0 0 1 1.1 -0.5 l 2 -2.3 a 14.58 14.58 0 0 0 0.7 -1.9 V 65.7 c -1 -1.7 -2 -3.5 -2.9 -5.2 c -1.5 -0.9 -1.5 -0.9 -7.9 -3.3 c -3.6 -0.3 -5.3 -0.8 -11.4 -1.6 h -4 c -1.4 0.3 -1.4 0.3 -8.2 0.8 c -1.7 0.6 -3.3 1.1 -5 1.6 c -1.2 0.6 -2.5 1.3 -3.6 1.9 c -2.1 1.6 -2.1 1.6 -7.6 7.2 c -0.5 0.9 -1 1.8 -1.4 2.7 l -2.1 8.7 v 3.2 c 0.7 2.1 0.7 2.1 3.5 8.1 c 0.6 0.6 1.2 1.3 1.8 1.9 c 0.8 0.3 1.5 0.6 2.3 0.9 l 2.9 0.3 c 1.8 0.8 2.8 1.6 6.4 3.5 c 2.8 1.1 2.8 1.1 7.5 2.1 c 0.9 0.6 1.7 1.1 2.5 1.6 l 2 2.3 c 0.3 0.7 0.5 1.4 0.7 2 a 8.33 8.33 0 0 0 -0.4 1.5 c -0.6 0.9 -1.3 1.7 -1.9 2.5 a 8.77 8.77 0 0 1 -3.3 1.1 h -4.3 c -1.3 -0.5 -2.7 -1 -4 -1.4 l -1.2 -0.9 l -5.4 -6.6 a 14.09 14.09 0 0 0 -4 -2.5 h -2.9 c -0.8 0.4 -0.8 0.4 -2.3 1.8 c -0.3 0.6 -0.5 1.1 -0.7 1.6 c 0 7.3 0 7.3 0.4 8.4 c 1.1 1.3 1.1 1.3 5.7 5.6 c 1.1 0.6 2.1 1.3 3.2 1.9 c 2 0.8 4 1.5 5.9 2.3 c 2.4 0.1 4.8 0.2 7.1 0.2 c 0.7 0.2 1.4 0.5 2.1 0.7 c 1.9 0 3.8 -0.1 5.7 -0.1 c 1.3 -0.4 2.6 -0.7 3.9 -1.1 c 1.9 -0.2 3.8 -0.4 5.7 -0.5 l 3 -1.5 a 23.56 23.56 0 0 0 5 -3.8 c 0.7 -0.4 1.4 -0.7 2 -1 a 13.17 13.17 0 0 0 2.9 -3.5 c 0.7 -2.4 0.7 -2.4 3.6 -8.7 V 95 c -0.5 -2.7 -1 -5.4 -1.4 -8.1 A 3.25 3.25 0 0 1 323.6 85.6 Z" />
+                            <path class="mj-logo-character" id="MJLogoE" d="M 395.9 99.2 l -1.2 -0.6 h -3.3 c -1 0.5 -1.9 1.1 -2.8 1.6 c -3 2.4 -5.9 4.9 -8.9 7.3 c -0.9 0.4 -1.7 0.7 -2.5 1.1 l -2.9 0.6 h -2.4 c -2 -0.7 -4.1 -1.5 -6.1 -2.2 a 51.77 51.77 0 0 1 -5.9 -6.9 V 98.8 a 6.73 6.73 0 0 0 0.7 -1.1 a 16 16 0 0 0 2.3 -1 c 1.4 -0.2 2.9 -0.4 4.3 -0.5 a 54.7 54.7 0 0 0 7.9 -2.7 c 1.3 -0.2 2.6 -0.4 3.9 -0.5 a 65 65 0 0 0 7.9 -3.2 c 0.9 -0.9 1.8 -1.7 2.7 -2.6 c 0.6 -0.4 1.3 -0.8 1.9 -1.2 c 0.5 -0.6 1.1 -1.2 1.6 -1.7 c 0.5 -1.2 1 -2.3 1.4 -3.5 c 0.5 -0.7 1 -1.5 1.4 -2.1 c 0.2 -1.5 0.3 -2.9 0.4 -4.3 c -0.2 -1.7 -0.3 -3.5 -0.4 -5.2 c -0.3 -0.7 -0.5 -1.5 -0.7 -2.1 c -1.6 -1.8 -3.2 -3.6 -4.7 -5.5 c -1.2 -0.8 -2.5 -1.5 -3.6 -2.2 c -1.4 -0.5 -2.8 -1 -4.1 -1.5 c -0.7 -0.5 -1.5 -1 -2.2 -1.5 c -1.2 -0.3 -6.1 -0.6 -9.7 -1.1 h -3.6 c -1.4 0.6 -2.9 1.1 -4.3 1.6 c -1.9 -0.1 -3.8 -0.2 -5.7 -0.2 c -1 0.4 -2 0.7 -2.9 1.1 a 66 66 0 0 0 -8.2 4.6 c -1.2 1.1 -2.5 2.2 -3.7 3.3 a 54.22 54.22 0 0 1 -6 6.7 c -0.5 0.8 -1 1.6 -1.4 2.4 c -0.3 1.4 -0.5 2.7 -0.7 4.1 c -0.5 1.3 -1 2.6 -1.4 3.8 c -0.2 1.5 -0.3 2.9 -0.4 4.3 a 77.15 77.15 0 0 0 0.7 11.7 c 1.9 3.4 3.8 6.9 5.7 10.3 c 1.4 1 2.9 1.9 4.3 2.9 c 0.9 1.1 1.7 2.2 2.6 3.3 c 1.2 0.6 2.5 1.3 3.7 1.9 c 2.1 0.7 4.3 1.5 6.4 2.2 c 1.8 0.2 3.6 0.4 5.3 0.5 c 0.9 0.2 1.7 0.5 2.5 0.7 c 2.6 -0.1 5.2 -0.1 7.9 -0.2 c 4 -0.5 4 -0.5 5.3 -0.9 c 0.2 -0.5 0.2 -0.5 1.8 -2 h 4 c 1.8 -1.1 3.6 -2.2 5.3 -3.2 c 1.6 -0.7 3.2 -1.5 4.7 -2.2 a 18.48 18.48 0 0 0 1.4 -1.4 c 1 -2 1.9 -4 2.9 -6 v -2.5 C 396.6 100.9 396.2 100 395.9 99.2 Z M 359 76.4 a 9.35 9.35 0 0 0 2.1 -3.2 a 26.81 26.81 0 0 1 0.7 -2.7 c 0.7 -0.9 1.5 -1.7 2.3 -2.6 c 1.2 -0.4 2.3 -0.9 3.6 -1.3 h 2.9 l 1.2 0.6 c 0.2 0.4 0.4 0.9 0.7 1.4 v 9 c -0.5 0.7 -1 1.5 -1.4 2.2 c -1.8 1.5 -3.6 3.1 -5.4 4.6 a 14.17 14.17 0 0 0 -1.8 0.8 a 28.25 28.25 0 0 0 -2.9 0.2 a 2.84 2.84 0 0 1 -1.3 -1.6 C 358.9 79.5 358.9 79.5 359 76.4 Z" />        
+                            <path class="mj-logo-character" id="MJLogoJ" d="M 444.8 64.6 c -1.1 0 -2.2 -0.1 -3.4 -0.1 c -5 1.1 -5 1.1 -8.5 2.1 c -3.6 0 -4.6 -0.2 -7.9 -0.2 c -1 0.3 -1.9 0.6 -2.8 0.8 c -2.1 0.2 -4.3 0.4 -6.4 0.5 l -2.2 0.6 c -0.6 0.6 -1.3 1.1 -1.9 1.7 v 1.6 a 10.47 10.47 0 0 0 0.8 1.1 a 19 19 0 0 1 4.7 2.5 a 11.15 11.15 0 0 1 1.6 3.9 c 0.2 2.7 0.3 5.4 0.4 8.1 c -0.2 4.3 -0.3 8.5 -0.4 12.7 a 6.47 6.47 0 0 1 0.4 1.3 c 0 1.9 -0.4 3.5 -0.4 7.9 c -0.3 0.5 -0.5 0.9 -0.8 1.4 a 3.33 3.33 0 0 1 -2.2 0.4 c -1.4 -0.6 -2.9 -1.3 -4.3 -1.9 c -0.9 -0.2 -1.7 -0.4 -2.5 -0.5 c -1.2 0.1 -2.4 0.2 -3.6 0.2 c -1.5 0.5 -2.9 1 -4.4 1.4 c -0.8 0.6 -0.8 0.6 -1.5 2 V 114 c 0.4 0.7 0.8 1.5 1.2 2.2 c 0.7 0.6 1.5 1.1 2.2 1.7 c 1.7 0.6 3.3 1.3 5 1.9 c 9.6 1.1 9.6 1.1 11.1 1.5 c 7.5 -0.7 7.5 -0.7 10.7 -0.7 c 6.7 -1.1 6.7 -1.1 8.2 -1.6 c 2.3 -1.5 5 -2.8 7.1 -4.3 c 2 -2 2 -2 2.7 -3.4 c 0.2 -6 0.3 -12.1 0.4 -18.1 c -0.4 -1.9 -0.4 -11.6 -0.7 -13 a 8.53 8.53 0 0 1 0.7 -3.8 V 69.1 c -0.7 -1.4 -1.5 -2.8 -2.2 -4.1 A 2.82 2.82 0 0 1 444.8 64.6 Z" />
+                            <path class="mj-logo-character" id="MJLogoJTittle" d="M 441.4 45.8 c -9.2 -0.3 -10.7 -0.6 -13.6 -0.6 a 11.29 11.29 0 0 0 -3.2 1.6 c -2.5 1.1 -5 1.6 -6.2 2.2 c -0.3 0.5 -0.5 1 -0.7 1.4 v 3.8 c 0.5 0.8 1 1.5 1.4 2.2 a 28 28 0 0 1 4.8 3 c 1.8 0.8 1.8 0.8 5.7 1.8 c 6 -0.2 6 -0.2 8.5 -0.4 c 2.4 -0.7 4.8 -1.5 7.1 -2.1 c 1.2 -0.6 1.2 -0.6 3 -2.3 c 0.5 -1 1 -2 1.4 -3 V 51.5 c -0.5 -0.7 -1.1 -1.5 -1.6 -2.1 A 39.05 39.05 0 0 0 441.4 45.8 Z" />
+                            <path class="mj-logo-character" id="MJLogoA" d="M 520.6 107.5 a 24 24 0 0 0 -1.4 -5.7 V 90 c 0.3 -0.9 0.5 -1.7 0.7 -2.5 c -0.5 -1.2 -1 -2.4 -1.5 -3.5 V 82.4 c 0.5 -1 1 -2 1.4 -3 V 73.9 a 23.91 23.91 0 0 1 -2.1 -6.2 c -0.7 -1.1 -1.5 -2.1 -2.2 -3.1 c -1.9 -1.9 -3.7 -3.9 -5.6 -5.8 a 12.75 12.75 0 0 1 -1.2 -0.7 c -3.2 -1.1 -3.2 -1.1 -11.8 -3.2 c -4.8 -0.1 -9.6 -0.2 -14.3 -0.2 a 109.61 109.61 0 0 0 -11.4 1.6 c -2 0.9 -3.9 1.8 -5.8 2.7 c -1.1 1.1 -2.2 2.3 -3.3 3.4 c -0.5 0.8 -1 1.6 -1.4 2.4 a 20.73 20.73 0 0 0 0.7 6 a 8.72 8.72 0 0 0 2.2 3 c 1.3 0.4 2.7 0.8 4 1.1 h 3.3 a 27.71 27.71 0 0 0 5.3 -1.4 l 7.7 -7.7 l 3 -1.2 h 2.5 a 3.2 3.2 0 0 1 1.9 1 c 0.4 0.9 0.4 0.9 1.4 7.1 v 3.4 a 3 3 0 0 0 -0.5 0.7 l -2.1 0.6 h -5 a 16 16 0 0 1 -2.1 0.5 h -4.3 a 60.3 60.3 0 0 0 -8.5 3 c -3 1.5 -6 2.9 -8.9 4.3 c -0.5 0.7 -1.1 1.4 -1.6 2.1 A 26.81 26.81 0 0 0 459 90 c -0.7 1.2 -1.4 2.4 -2.1 3.5 c -0.5 1.4 -1 2.7 -1.4 4.1 v 6.8 c 0.4 1.3 0.4 1.3 3.2 7.3 c 2.1 2 4.1 4 6.1 6 c 3 1.2 6 2.3 9 3.4 c 3.5 -0.3 6.9 -0.6 10.4 -1 c 1.4 -0.5 2.8 -1.1 4.2 -1.6 c 1.4 -0.9 2.9 -1.7 4.3 -2.5 h 1.7 c 0.5 0.4 0.5 0.4 2 2.6 c 0.8 0.3 0.8 0.3 7.6 0.9 l 9.3 -0.3 c 0.9 -0.3 1.7 -0.6 2.5 -0.8 h 1.4 c 1 0.3 1.9 0.6 2.8 0.8 h 2.6 l 1.5 -0.6 c 0.4 -0.6 0.7 -1.1 1.1 -1.7 a 19.14 19.14 0 0 0 0.4 -2.1 c -0.3 -0.8 -0.5 -1.5 -0.8 -2.2 C 523.4 110.9 521.9 109.2 520.6 107.5 Z m -27.1 -7.2 a 81.53 81.53 0 0 1 -5.1 7.1 a 15.52 15.52 0 0 0 -2.1 0.4 l -1.8 -1.2 a 23.1 23.1 0 0 1 -2.7 -5.3 c -0.4 -3.5 -0.7 -4.6 -0.7 -6.3 a 15.62 15.62 0 0 1 3.7 -2.8 l 1.3 -1.6 a 34.52 34.52 0 0 1 5.1 -2.5 h 1.1 c 1.2 0.7 1.2 0.7 1.5 1.2 a 19.71 19.71 0 0 1 -0.7 6.1 A 16.17 16.17 0 0 1 493.5 100.3 Z" />
+                            <path class="mj-logo-character" id="MJLogoW" d="M 690.1 8.7 c -0.5 -2.1 -1 -4.2 -1.4 -6.2 A 21 21 0 0 1 687.3 0.8 H 685 c -0.5 0.3 -0.5 0.3 -1.2 1.7 c -0.2 1.6 -0.3 3.2 -0.4 4.9 c -1.8 10.4 -1.8 10.4 -2.6 13.1 c -0.7 1.2 -1.4 2.4 -2.1 3.5 a 48.15 48.15 0 0 1 -6.6 6 c -0.9 0.4 -1.7 0.8 -2.5 1.1 h -2.5 c -0.5 -0.5 -1.1 -1 -1.6 -1.5 c -0.5 -2.2 -1 -4.3 -1.4 -6.5 c -0.3 -2.4 -0.5 -4.9 -0.7 -7.3 a 5.5 5.5 0 0 1 -0.7 -0.9 h -2.4 c -0.7 0.5 -0.7 0.5 -2.2 2.8 a 26.81 26.81 0 0 0 -0.7 2.7 v 10 c -0.5 1 -1 2 -1.4 3 c -0.5 0.4 -1.1 0.8 -1.6 1.2 a 6.85 6.85 0 0 1 -3.2 0.6 c -0.5 -0.2 -1.1 -0.5 -1.6 -0.7 c -0.3 -0.4 -0.5 -0.7 -0.8 -1.1 c -0.1 -2.9 -0.2 -5.8 -0.3 -8.6 c -0.5 -0.7 -1 -1.5 -1.4 -2.1 a 12.75 12.75 0 0 1 -1.2 -0.7 a 4.49 4.49 0 0 0 -2.3 0.3 c -0.4 0.6 -0.7 1.3 -1.1 1.9 c -2.1 6.8 -2.1 6.8 -3.5 10 a 17.89 17.89 0 0 1 -3.3 3.5 c -0.8 0.4 -1.5 0.8 -2.3 1.2 c -1.4 0.4 -2.9 0.7 -4.3 1.1 c -1.4 0.1 -2.8 0.2 -4.2 0.2 a 49.22 49.22 0 0 1 -7.1 -3.2 h -2.7 c -0.4 0.4 -0.7 0.8 -1.1 1.2 c -0.4 4.6 -0.4 4.6 -0.7 5.4 l -4.5 3.9 c -0.5 0.7 -1.1 1.4 -1.6 2 a 14.58 14.58 0 0 0 -0.7 1.9 V 56 c -0.5 2 -1 4 -1.4 6 c -1.4 4.1 -2.8 9.7 -5.7 18.6 a 52.73 52.73 0 0 0 -4.3 7.5 c -0.5 0 -1.1 0.1 -1.6 0.1 a 6.36 6.36 0 0 1 -2 -2 c -2.8 -6.8 -2.8 -6.8 -7.1 -18.9 V 65.2 c 0.5 -1 1 -2 1.4 -3 V 60.3 c -0.7 -0.8 -1.4 -1.5 -2.1 -2.3 c -0.6 -0.2 -1.3 -0.4 -1.9 -0.6 L 566 57.1 c -1.1 0.3 -1.1 0.3 -3.3 1.7 a 12.2 12.2 0 0 0 -0.7 1.7 a 35.25 35.25 0 0 1 0.3 6.2 c -2.4 6.9 -4.8 13.9 -7.2 20.8 c -2.4 2.1 -2.4 2.1 -2.7 2.7 a 3.15 3.15 0 0 1 -1.7 0.4 L 548 86.4 c -0.5 -1.2 -1 -2.4 -1.4 -3.5 c -0.7 -3.8 -1.4 -5.4 -2.1 -8.9 a 10.57 10.57 0 0 0 -1.4 -3 c -1.4 -3.2 -1.4 -3.2 -2.8 -8.6 V 50.5 c -0.4 -1 -0.7 -2 -1.1 -3 c -0.5 -0.6 -1.1 -1.2 -1.5 -1.8 c -1.1 -0.6 -2.1 -1.2 -3.1 -1.7 s -2.2 -0.8 -3.3 -1.1 a 107.57 107.57 0 0 1 -12.4 -1.1 c -0.4 -0.2 -0.9 -0.4 -1.3 -0.6 a 6.73 6.73 0 0 1 -0.7 -1.1 c -0.4 -6.2 -0.4 -6.2 -0.7 -7.4 a 6.21 6.21 0 0 0 -1.9 -1.4 h -1.6 c -0.7 0.6 -2.9 4.7 -4.4 6.6 a 13.39 13.39 0 0 0 -1.2 0.6 c -1 0.2 -1.9 0.4 -2.8 0.6 h -2.4 c -1.7 -0.5 -3.4 -0.9 -5.1 -1.4 c -0.5 -0.5 -1.1 -1 -1.6 -1.5 c -0.7 -1.6 -0.7 -1.6 -2.1 -7 V 24.6 a 3.33 3.33 0 0 0 -1.4 -1.7 h -2.4 c -0.7 0.5 -0.7 0.5 -1.5 1.7 c -0.5 2.1 -1 4.1 -1.4 6.2 c -0.5 0.8 -1.1 1.5 -1.6 2.3 c -0.7 0.5 -1.5 0.9 -2.2 1.4 h -2 a 13.16 13.16 0 0 1 -3.4 -1.7 a 23.07 23.07 0 0 1 -1.4 -1.9 c -0.3 -1 -0.5 -2 -0.7 -3 c -0.1 -3.5 -0.2 -7.1 -0.3 -10.5 a 7.46 7.46 0 0 1 -0.7 -1.2 h -2.3 a 12 12 0 0 1 -1.2 1.1 c -0.8 1.9 -0.8 1.9 -2.2 7.6 a 3.79 3.79 0 0 1 -1.6 1.7 H 465 c -0.4 -0.4 -0.9 -0.8 -1.3 -1.2 c -0.5 -1.5 -1 -3.1 -1.4 -4.6 c 0 -6.7 0.4 -8.3 0.4 -18.1 c -0.4 -0.6 -0.7 -1.1 -1.1 -1.7 c -0.9 0 -1.7 0.1 -2.6 0.1 c -0.6 0.9 -1.1 1.8 -1.7 2.6 c -1 2.8 -1.9 5.6 -2.8 8.4 c -0.7 5.7 -0.7 5.7 -1.4 8.1 V 31.9 c 0.7 1.9 1.4 6.2 2.8 10.5 c 1 1.4 2 2.8 2.9 4.1 l 3.9 2.7 c 1.8 0.7 3.6 1.5 5.4 2.2 c 1 0.2 1.9 0.4 2.8 0.6 c 9.7 -0.3 9.7 -0.3 14.7 -0.8 l 1.8 -0.6 c 4.4 -0.4 8.8 -0.9 13.2 -1.3 h 13.1 c 2.9 0.3 2.9 0.3 3.7 0.7 a 23.07 23.07 0 0 1 1.4 1.9 c 1 0.7 1.9 1.5 2.8 2.1 c 0.5 0.7 1 1.5 1.4 2.2 c 0.5 2.2 1 4.3 1.4 6.5 l 2.1 5.1 c 0.3 1.4 0.5 2.7 0.7 4.1 c 1.4 4.3 2.9 8.5 4.3 12.7 a 64.78 64.78 0 0 0 2.9 10.5 a 23.07 23.07 0 0 1 1.4 1.9 c 0.7 1.7 0.7 1.7 1.4 5.7 c 0.5 1.1 1 2.2 1.4 3.2 l 0.3 4.8 c -0.4 1.4 -0.7 2.7 -1.1 4.1 a 20.69 20.69 0 0 1 0.4 2.2 a 11.41 11.41 0 0 0 1.1 1.1 c 0.6 0.2 1.3 0.4 1.9 0.6 h 11.4 c 0.6 0.2 1.2 0.5 1.8 0.7 c 4 -0.2 4 -0.2 5.1 -0.5 c 0.7 -0.5 0.7 -0.5 1.5 -1.9 v -2.8 a 18.62 18.62 0 0 1 -1.1 -5.1 c 0.5 -1.8 1 -3.6 1.4 -5.4 c 1 -1.5 1.9 -3.1 2.9 -4.6 c 1 -2 1.9 -4 2.8 -6 c 0.5 -1.5 1 -3.1 1.4 -4.6 c 1 -1.3 1.9 -2.7 2.8 -4 a 9.85 9.85 0 0 1 1.7 -0.2 l 0.9 0.6 a 41 41 0 0 0 2.5 7.9 c 1.4 2.7 2.9 7 4.3 10 c 0.4 2.1 0.7 4.2 1.1 6.3 c -0.3 1.4 -0.5 2.8 -0.7 4.2 v 3.6 c 0.3 0.4 0.5 0.8 0.7 1.1 l 1.2 0.3 c 2.2 0 4.4 -0.3 6.8 -0.3 a 12.09 12.09 0 0 0 1.8 0.5 a 27.94 27.94 0 0 0 5.1 -0.2 c 3.5 0 5.6 0.5 7.5 0.5 a 9.29 9.29 0 0 0 1 -0.5 l 0.9 -1.2 c 0 -1.4 0 -1.4 -0.7 -5.5 a 32.55 32.55 0 0 1 0.4 -7 c 0.7 -1.3 1.4 -2.5 2.1 -3.8 c 0.5 -1.5 1 -3.1 1.4 -4.6 c 0.5 -0.8 1 -1.6 1.4 -2.4 c 1.4 -3.5 2.9 -8.3 5.7 -15.6 c 0.3 -1.4 0.5 -2.7 0.7 -4.1 l 3.6 -8.1 c 0.5 -2.1 1 -4.2 1.4 -6.2 a 61.44 61.44 0 0 0 5.5 -8.2 c 0.7 -0.5 1.5 -0.9 2.2 -1.4 a 45.42 45.42 0 0 0 7.1 -1.1 h 9.6 c 0.9 0.2 1.7 0.4 2.5 0.5 l 23.6 0.6 c 2.5 -0.6 5 -1.3 7.5 -1.9 c 0.7 -0.3 1.3 -0.6 2 -0.9 l 3.5 -2.9 a 58.15 58.15 0 0 0 4.3 -6.8 c 0.3 -1.1 0.5 -2.2 0.7 -3.2 c 0.4 -4 0.7 -7.9 1.1 -11.9 C 691.2 19.2 690.4 15.2 690.1 8.7 Z" />
+                        </g>
+                    </svg>
+                </a>
+        </div>
+        <script>
+            function scrollTop(){
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    <script>
+        function info_display(){
+        if (ski_skus() > 0 && snow_skus() == 0) {
+            //console.log(div.classList.contains('notActive'));
+            document.getElementById("skier_info").style.display = "block";
+            document.getElementById("boot_binding").style.display = "block";
+            document.getElementById("stance").style.display = "none";
+        } 
+        else if(ski_skus() == 0 && snow_skus() > 0){
+            document.getElementById("skier_info").style.display = "none";
+            document.getElementById("boot_binding").style.display = "block";
+            document.getElementById("stance").style.display = "block";
+        }
+        else if (check_skus() == true){
+            document.getElementById("skier_info").style.display = "none";
+            document.getElementById("boot_binding").style.display = "none";  
+            document.getElementById("stance").style.display = "none";        
+        }
+        else if (ski_skus() > 0 && snow_skus() > 0){
+            document.getElementById("skier_info").style.display = "block";
+            document.getElementById("boot_binding").style.display = "block";
+            document.getElementById("stance").style.display = "block";
+        }
+    }
+    </script>
+    <script>
+        function ski_skus(){
+            var sku_1= $("#sku_1").val();
+            var sku_2= $("#sku_2").val();
+            var sku_3= $("#sku_3").val();
+            var sku_4= $("#sku_4").val();
+            var sku_5= $("#sku_5").val();
+            var qty = 0;
+                if (sku_1 == "4234102" || sku_2 == "4234102" || sku_3 == "4234102" || sku_4 == "4234102" || sku_5 == "4234102"){
+                    qty++;
+                }
+                if (sku_1 == "4234103" || sku_2 == "4234103" || sku_3 == "4234103" || sku_4 == "4234103" || sku_5 == "4234103"){
+                    qty++;
+                }
+                if (sku_1 == "4234101" || sku_2 == "4234101" || sku_3 == "4234101" || sku_4 == "4234101" || sku_5 == "4234101"){
+                    qty++;
+                }
+                if (sku_1 == "4234106" || sku_2 == "4234106" || sku_3 == "4234106" || sku_4 == "4234106" || sku_5 == "4234106"){
+                    qty++;
+                }
+                if (sku_1 == "4234108" || sku_2 == "4234108" || sku_3 == "4234108" || sku_4 == "4234108" || sku_5 == "4234108"){
+                    qty++;
+                }
+                return qty;
+        }
+    </script>
+    <script>
+        function snow_skus(){
+            var sku_1= $("#sku_1").val();
+            var sku_2= $("#sku_2").val();
+            var sku_3= $("#sku_3").val();
+            var sku_4= $("#sku_4").val();
+            var sku_5= $("#sku_5").val();
+            var qty = 0;
+                if (sku_1 == "4234111" || sku_2 == "4234111" || sku_3 == "4234111" || sku_4 == "4234111" || sku_5 == "4234111"){
+                    qty++;
+                }
+                if (sku_1 == "4234105" || sku_2 == "4234105" || sku_3 == "4234105" || sku_4 == "4234105" || sku_5 == "4234105"){
+                    qty++;
+                }
+                if (sku_1 == "4234104" || sku_2 == "4234104" || sku_3 == "4234104" || sku_4 == "4234104" || sku_5 == "4234104"){
+                    qty++;
+                }
+                return qty;
+        }
+    </script>
+    <script>
+        function check_skus(){
+            var sku_1= $("#sku_1").val();
+            var sku_2= $("#sku_2").val();
+            var sku_3= $("#sku_3").val();
+            var sku_4= $("#sku_4").val();
+            var sku_5= $("#sku_5").val();
+            var done = false;
+                if (sku_1 == "" && sku_2 == "" && sku_3 == "" && sku_4 == "" && sku_5 == ""){
+                    done = true;
+                }
+                return done;
+        }
+    </script>
+    <script>
+        function clearCheck(){
+       $('input[type="checkbox"]').click(function() {
+       $('input[type="checkbox"]').not(this).prop("checked", false);
+    });
+    }
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        
+<script>
+      
+  var script_url = "https://script.google.com/macros/s/AKfycbzrwZfsGjcl4r_BAejwEzzMjjh69kHypGrH7ksy_FYYsKPbqHly3KPIF5epmn4LsPEM/exec";
+  //This Script is for the google web app/api
+  // Make an AJAX call to Google Script
+    
+
+  function insert_value() {
+    $("#re").css("visibility","hidden");
+     document.getElementById("loader").style.visibility = "visible";
+    
+    var f_name= $("#f_name").val();
+    var l_name= $("#l_name").val();
+    var ph_num= $("#ph_num").val();
+    var blank = $("#blank").val();
+    var blank2 = $("#blank2").val();
+    var date_in= $("#date_in").val();
+    var date_out= $("#date_out").val();
+    var ski_snow= $('input[name=ski_snow]:checked').val();
+    var weight= $("#weight").val();
+    var height= $("#height").val();
+    var skier_type= $('input[name=skier_type]:checked').val();
+    var stance= $('input[name=stance]:checked').val();
+    var age= $("#age").val();
+    var make= $("#make").val();
+    var mdl= $("#mdl").val();
+    var size= $("#size").val();
+    var boot_make= $("#boot_make").val();
+    var boot_mdl= $("#boot_mdl").val();
+    var bindings= $("#bindings").val();
+    var bootLength= $("#bootLength").val();
+    var notes= $("#notes").val();
+    var sku_1= $("#sku_1").val();
+    var sku_2= $("#sku_2").val();
+    var sku_3= $("#sku_3").val();
+    var sku_4= $("#sku_4").val();
+    var sku_5= $("#sku_5").val();
+    
+
+
+    var url = script_url+"?callback=ctrlq&age="+age+"&bootLength="+bootLength+"&bindings="+bindings+"&boot_mdl="+boot_mdl+"&boot_make="+boot_make+"&size="+size+"&skier_type="+skier_type+"&height="+height+"&weight="+weight+"&stance="+stance+"&ski_snow="+ski_snow+"&date_out="+date_out+"&date_in="+date_in+"&notes="+notes+"&sku_5="+sku_5+"&sku_4="+sku_4+"&sku_3="+sku_3+"&sku_2="+sku_2+"&sku_1="+sku_1+"&mdl="+mdl+"&make="+make+"&blank2="+blank2+"&blank="+blank+"&ph_num="+ph_num+"&l_name=" + l_name + "&f_name=" + f_name + "&action=insert";
+  
+
+    var request = jQuery.ajax({
+      crossDomain: true,
+      url: url ,
+      method: "GET",
+      dataType: "jsonp"
+    });
+    
+  
+
+    document.getElementById("snow_tech").reset();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  }
+
+  // print the returned data
+  function ctrlq(e) {
+  
+    
+    $("#re").html(e.result);
+    $("#re").css("visibility","visible");
+    read_value();
+    
+  }
+  
+  
+  function read_value() {
+
+$("#re").css("visibility","hidden");
+   
+   document.getElementById("loader").style.visibility = "visible";
+ var url = script_url+"?action=read";
+
+$.getJSON(url, function (json) {
+
+    // Set the variables from the results array
+   
+   
+  
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+        
+
+        var header = table.createTHead();
+        var row = header.insertRow(0);  
+
+        var cell1 = row.insertCell(1);
+        var cell2 = row.insertCell(2);
+        var cell3 = row.insertCell(3);
+        var cell4 = row.insertCell(4);
+        var cell5 = row.insertCell(5);
+        var cell6 = row.insertCell(6);  
+        var cell7 = row.insertCell(7);
+        var cell8 = row.insertCell(8);  
+        var cell9 = row.insertCell(9);
+        var cell10 = row.insertCell(10);
+        var cell11 = row.insertCell(11);
+        var cell12 = row.insertCell(12);
+        var cell13 = row.insertCell(13);
+        var cell14 = row.insertCell(14);
+        var cell15 = row.insertCell(15);
+        var cell16 = row.insertCell(16);
+        var cell17 = row.insertCell(17);
+        var cell18 = row.insertCell(18);
+        var cell19 = row.insertCell(19);
+        var cell20 = row.insertCell(20);
+        var cell21 = row.insertCell(21);
+        var cell22 = row.insertCell(22);
+        var cell23 = row.insertCell(23);
+        var cell24 = row.insertCell(24);
+        var cell25 = row.insertCell(25);
+        var cell26 = row.insertCell(26);     
+            
+        
+
+        cell1.innerHTML = "<b>f_name</b>";
+        cell2.innerHTML = "<b>l_name</b>";
+        cell3.innerHTML = "<b>ph_num</b>";
+        cell4.innerHTML = "<b>blank<b>";
+        cell5.innerHTML = "<b>blank<b>";
+        cell6.innerHTML = "<b>make</b>";
+        cell7.innerHTML = "<b>mdl</b>";
+        cell8.innerHTML = "<b>sku_1</b>";
+        cell9.innerHTML = "<b>sku_2</b>";
+        cell10.innerHTML = "<b>sku_3</b>";
+        cell11.innerHTML = "<b>sku_4</b>";
+        cell12.innerHTML = "<b>sku_5</b>";
+        cell13.innerHTML = "<b>notes</b>";
+        cell14.innerHTML = "<b>date_in</b>";
+        cell15.innerHTML = "<b>date_out</b>";
+        cell16.innerHTML = "<b>ski_snow</b>";
+        cell17.innerHTML = "<b>stance</b>"
+        cell18.innerHTML = "<b>weight</b>";
+        cell19.innerHTML = "<b>height</b>";
+        cell20.innerHTML = "<b>skier_type</b>";
+        cell21.innerHTML = "<b>size</b>";       
+        cell22.innerHTML = "<b>boot_make</b>";      
+        cell23.innerHTML = "<b>boot_mdl</b>";       
+        cell24.innerHTML = "<b>bindings</b>";
+        cell25.innerHTML = "<b>bootLength<b>";
+        cell26.innerHTML = "<b>age<b>";                 
+        
+
+        
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < json.records.length; i++) {
+
+            tr = table.insertRow(-1);
+                var tabCell = tr.insertCell(-1);
+                         tabCell.innerHTML = json.records[i].f_name;
+        tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = json.records[i].l_name;
+        tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = json.records[i].ph_num;
+        tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = json.records[i].blank;                
+        tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = json.records[i].blank2;                
+        tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = json.records[i].make;
+        tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = json.records[i].mdl;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].sku_1;      
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].sku_2;      
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].sku_3;      
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].sku_4;      
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].sku_5;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].notes;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].date_in;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].date_out;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].ski_snow;
+        tabCell = tr.insertCell(-1);               
+                        tabCell.innerHTML = json.records[i].stance;               
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].weight;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].height;
+        tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = json.records[i].size;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].boot_make;
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].boot_mdl;                       
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].bindings;  
+        tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].bootLength;
+       tabCell = tr.insertCell(-1);        
+                        tabCell.innerHTML = json.records[i].age;
+              
+              
+       
+            }
+      
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+        document.getElementById("loader").style.visibility = "hidden";
+        $("#re").css("visibility","visible");
+    });
+    }
+    </script>
+    </head>
+    <body>
+        <form id="snow_tech">
+            <fieldset class="borderSep">
+                <legend>Custy Info</legend>
+                <div class="columnsLeft">
+                    <div class="form-field boxAlign">
+                        <a>First Name</a>
+                            <input type = "text" name ="f_name" id="f_name" size="35">
+                    </div>
+                    <div class="form-field boxAlign">
+                        <a>Last Name</a>
+                            <input type = "text" name ="l_name" id="l_name" size="35">
+                    </div>
+                    <div class="form-field boxAlign">
+                        <a class="phNum">Phone Number</a>
+                            <input type="num" name="ph_num" id="ph_num">
+                            <div id="blank" value=""></div>
+                    </div>
+                </div>
+                <div class="columnsRight">
+                    <div class="form-field boxAlign">
+                        <a class="date_in">Date in</a>
+                            <input type="date" name="date_in" id="date_in">
+                    </div>
+                    <div class="form-field boxAlign">
+                        <a class="date_out">Date out</a>
+                            <input type="date" name="date_out" id="date_out">
+                    </div>
+                </div>
+            </fieldset>
+                    <fieldset class="borderSep">
+                        <legend>Select Service</legend>
+                            <div class="columnsLeft notActive" id="default">
+                                <div class="form-field boxAlign">
+                                    <a class="sku_1">1.</a> 
+                                    <select id="sku_1" name="sku_1" onchange="info_display();">
+                                        <option> </option>
+                                        <option value="" class="option_bold">---HOT WAX (SKI and SNOWBOARD)---</option>
+                                        <option value="7524870">Swix Performance Speed Wax $20</option>
+                                        <option value="7524871">Swix High Speed Wax $30</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---EDGE SHARPENING (SKI and SNOWBOARD)---</option>
+                                        <option value="4234098">Edge Sharpening Hand $25 (GR)</option>
+                                        <option value="4234097">Edge Sharpening Machine $20 (BHBS)</option>
+                                        <option value="7524872">Sharpen and Wax Machine $40 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---FULL TUNE PACKAGE---</option>
+                                        <option value="4251980">Full Tune Package Hand - PS WAX $40 (GR)</option>
+                                        <option value="7524868">Full Tune Package Hand - HS WAX $45 (GR)</option>
+                                        <option value="4251981">Full Tune Package Machine - PS WAX $50 (BHBS)</option>
+                                        <option value="7524869">Full Tune Package Machine - HS WAX $55 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BINDING MOUNT---</option>
+                                        <option value="4234101">System Binding Mount $30</option>
+                                        <option value="4234102">Flat Binding Mount $50</option>
+                                        <option value="4234103">Alpine Touring Binding Mount $55</option>
+                                        <option value="4234104">Split Board Binding Mount $30</option>
+                                        <option value="4234105">Snowboard Binding Mount and Adjustment $15</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BINDING ADJUSTMENT and TORQUE TEST---</option>
+                                        <option value="4234106">Ski Binding Adjustment and Torque Test $25</option>
+                                        <option value="4234108">Binding Torque Test (First Season Test Free w/ Purchase)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BASE REPAIRS---</option>
+                                        <option value="4234110">P-Tex Repairs Base Cost $5 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BOOT WORK---</option>
+                                        <option value="4234111">Ski Boot Work Base Cost $25 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---MISC Services---</option>
+                                        <option value="4234112">Skin Trim $25</option>
+                                        <option value="4234113">Split Board Skin Trim $20</option>
+                                    </select>
+                                </div>
+                                <div class="form-field boxAlign">
+                                    <a class="sku_2">2.</a> 
+                                    <select id="sku_2" name="sku_2" onchange="info_display();">
+                                        <option> </option>
+                                        <option value="" class="option_bold">---HOT WAX (SKI and SNOWBOARD)---</option>
+                                        <option value="7524870">Swix Performance Speed Wax $20</option>
+                                        <option value="7524871">Swix High Speed Wax $30</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---EDGE SHARPENING (SKI and SNOWBOARD)---</option>
+                                        <option value="4234098">Edge Sharpening Hand $25 (GR)</option>
+                                        <option value="4234097">Edge Sharpening Machine $20 (BHBS)</option>
+                                        <option value="7524872">Sharpen and Wax Machine $40 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---FULL TUNE PACKAGE---</option>
+                                        <option value="4251980">Full Tune Package Hand - PS WAX $40 (GR)</option>
+                                        <option value="7524868">Full Tune Package Hand - HS WAX $45 (GR)</option>
+                                        <option value="4251981">Full Tune Package Machine - PS WAX $50 (BHBS)</option>
+                                        <option value="7524869">Full Tune Package Machine - HS WAX $55 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BINDING MOUNT---</option>
+                                        <option value="4234101">System Binding Mount $30</option>
+                                        <option value="4234102">Flat Binding Mount $50</option>
+                                        <option value="4234103">Alpine Touring Binding Mount $55</option>
+                                        <option value="4234104">Split Board Binding Mount $30</option>
+                                        <option value="4234105">Snowboard Binding Mount and Adjustment $15</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BINDING ADJUSTMENT and TORQUE TEST---</option>
+                                        <option value="4234106">Ski Binding Adjustment and Torque Test $25</option>
+                                        <option value="4234108">Binding Torque Test (First Season Test Free w/ Purchase)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BASE REPAIRS---</option>
+                                        <option value="4234110">P-Tex Repairs Base Cost $5 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BOOT WORK---</option>
+                                        <option value="4234111">Ski Boot Work Base Cost $25 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---MISC Services---</option>
+                                        <option value="4234112">Skin Trim $25</option>
+                                        <option value="4234113">Split Board Skin Trim $20</option>
+                                    </select>
+                                </div>
+                                <div class="form-field boxAlign">
+                                    <a class="sku_3">3.</a> 
+                                    <select id="sku_3" name="sku_3" onchange="info_display();">
+                                        <option> </option>
+                                        <option value="" class="option_bold">---HOT WAX (SKI and SNOWBOARD)---</option>
+                                        <option value="7524870">Swix Performance Speed Wax $20</option>
+                                        <option value="7524871">Swix High Speed Wax $30</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---EDGE SHARPENING (SKI and SNOWBOARD)---</option>
+                                        <option value="4234098">Edge Sharpening Hand $25 (GR)</option>
+                                        <option value="4234097">Edge Sharpening Machine $20 (BHBS)</option>
+                                        <option value="7524872">Sharpen and Wax Machine $40 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---FULL TUNE PACKAGE---</option>
+                                        <option value="4251980">Full Tune Package Hand - PS WAX $40 (GR)</option>
+                                        <option value="7524868">Full Tune Package Hand - HS WAX $45 (GR)</option>
+                                        <option value="4251981">Full Tune Package Machine - PS WAX $50 (BHBS)</option>
+                                        <option value="7524869">Full Tune Package Machine - HS WAX $55 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BINDING MOUNT---</option>
+                                        <option value="4234101">System Binding Mount $30</option>
+                                        <option value="4234102">Flat Binding Mount $50</option>
+                                        <option value="4234103">Alpine Touring Binding Mount $55</option>
+                                        <option value="4234104">Split Board Binding Mount $30</option>
+                                        <option value="4234105">Snowboard Binding Mount and Adjustment $15</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BINDING ADJUSTMENT and TORQUE TEST---</option>
+                                        <option value="4234106">Ski Binding Adjustment and Torque Test $25</option>
+                                        <option value="4234108">Binding Torque Test (First Season Test Free w/ Purchase)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BASE REPAIRS---</option>
+                                        <option value="4234110">P-Tex Repairs Base Cost $5 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BOOT WORK---</option>
+                                        <option value="4234111">Ski Boot Work Base Cost $25 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---MISC Services---</option>
+                                        <option value="4234112">Skin Trim $25</option>
+                                        <option value="4234113">Split Board Skin Trim $20</option>
+                                    </select>
+                                </div>
+                            
+                            </div>
+                            <div class="columnsRight">
+                                <div class="form-field boxAlign">
+                                    <a class="sku_4">4.</a> 
+                                    <select id="sku_4" name="sku_4" onchange="info_display();">
+                                        <option> </option>
+                                        <option value="" class="option_bold">---HOT WAX (SKI and SNOWBOARD)---</option>
+                                        <option value="7524870">Swix Performance Speed Wax $20</option>
+                                        <option value="7524871">Swix High Speed Wax $30</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---EDGE SHARPENING (SKI and SNOWBOARD)---</option>
+                                        <option value="4234098">Edge Sharpening Hand $25 (GR)</option>
+                                        <option value="4234097">Edge Sharpening Machine $20 (BHBS)</option>
+                                        <option value="7524872">Sharpen and Wax Machine $40 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---FULL TUNE PACKAGE---</option>
+                                        <option value="4251980">Full Tune Package Hand - PS WAX $40 (GR)</option>
+                                        <option value="7524868">Full Tune Package Hand - HS WAX $45 (GR)</option>
+                                        <option value="4251981">Full Tune Package Machine - PS WAX $50 (BHBS)</option>
+                                        <option value="7524869">Full Tune Package Machine - HS WAX $55 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BINDING MOUNT---</option>
+                                        <option value="4234101">System Binding Mount $30</option>
+                                        <option value="4234102">Flat Binding Mount $50</option>
+                                        <option value="4234103">Alpine Touring Binding Mount $55</option>
+                                        <option value="4234104">Split Board Binding Mount $30</option>
+                                        <option value="4234105">Snowboard Binding Mount and Adjustment $15</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BINDING ADJUSTMENT and TORQUE TEST---</option>
+                                        <option value="4234106">Ski Binding Adjustment and Torque Test $25</option>
+                                        <option value="4234108">Binding Torque Test (First Season Test Free w/ Purchase)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BASE REPAIRS---</option>
+                                        <option value="4234110">P-Tex Repairs Base Cost $5 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BOOT WORK---</option>
+                                        <option value="4234111">Ski Boot Work Base Cost $25 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---MISC Services---</option>
+                                        <option value="4234112">Skin Trim $25</option>
+                                        <option value="4234113">Split Board Skin Trim $20</option>
+                                    </select>
+                                </div>
+                                <div class="form-field boxAlign">
+                                    <a class="sku_5">5.</a> 
+                                    <select id="sku_5" name="sku_5" onchange="info_display();">
+                                        <option> </option>
+                                        <option value="" class="option_bold">---HOT WAX (SKI and SNOWBOARD)---</option>
+                                        <option value="7524870">Swix Performance Speed Wax $20</option>
+                                        <option value="7524871">Swix High Speed Wax $30</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---EDGE SHARPENING (SKI and SNOWBOARD)---</option>
+                                        <option value="4234098">Edge Sharpening Hand $25 (GR)</option>
+                                        <option value="4234097">Edge Sharpening Machine $20 (BHBS)</option>
+                                        <option value="7524872">Sharpen and Wax Machine $40 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---FULL TUNE PACKAGE---</option>
+                                        <option value="4251980">Full Tune Package Hand - PS WAX $40 (GR)</option>
+                                        <option value="7524868">Full Tune Package Hand - HS WAX $45 (GR)</option>
+                                        <option value="4251981">Full Tune Package Machine - PS WAX $50 (BHBS)</option>
+                                        <option value="7524869">Full Tune Package Machine - HS WAX $55 (BHBS)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BINDING MOUNT---</option>
+                                        <option value="4234101">System Binding Mount $30</option>
+                                        <option value="4234102">Flat Binding Mount $50</option>
+                                        <option value="4234103">Alpine Touring Binding Mount $55</option>
+                                        <option value="4234104">Split Board Binding Mount $30</option>
+                                        <option value="4234105">Snowboard Binding Mount and Adjustment $15</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BINDING ADJUSTMENT and TORQUE TEST---</option>
+                                        <option value="4234106">Ski Binding Adjustment and Torque Test $25</option>
+                                        <option value="4234108">Binding Torque Test (First Season Test Free w/ Purchase)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---BASE REPAIRS---</option>
+                                        <option value="4234110">P-Tex Repairs Base Cost $5 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---SKI BOOT WORK---</option>
+                                        <option value="4234111">Ski Boot Work Base Cost $25 (Tech determines cost)</option>
+                                        <option> </option>
+                                        <option value="" class="option_bold">---MISC Services---</option>
+                                        <option value="4234112">Skin Trim $25</option>
+                                        <option value="4234113">Split Board Skin Trim $20</option>
+                                    </select>
+                                </div>
+                            </div>
+                    </fieldset>
+            <fieldset class="borderSep">
+                <legend>Equipment</legend>
+                <div class="ski_snow">
+                <div class="columnsLeft">
+                    <div class="form-field boxAlign">
+                        <a class="ski_css">Ski</a>
+                            <input type="radio" name="ski_snow" id="ski" value="ski" class="ski_snow" onclick="clearCheck()">
+                    </div>
+                </div>
+                <div class="columnsRight">
+                    <div class="form-field boxAlign">
+                        <a class="snow_css">Snowboard</a>
+                            <input type="radio" name="ski_snow" id="snow" value="snow" class="ski_snow" onclick="clearCheck()">
+                    </div>
+                </div>
+            </div>
+            </fieldset>
+            <fieldset class="borderSep">
+                <legend>Equipment Info</legend>
+                <div class="columnsLeft">
+                    <div class="form-field boxAlign">
+                        <a class="make">Make</a>
+                            <input type="text" name="make" id="make">
+                    </div>
+                    <div class="form-field boxAlign">
+                        <a class="mdl">Model</a>
+                            <input type="text" name="mdl" id="mdl">
+                    </div>
+                </div>
+                <div class="columnsRight">
+                    <div class="form-field boxAlign">
+                        <a class="size">Size (cm)</a>
+                            <input type="number" name="size" id="size">
+                    </div>
+                </div>
+            </fieldset>
+            <div id="skier_info" style="display:none;">
+            <fieldset class="borderSep" >
+                <legend>Skier Info</legend>
+                    <div class="columnsLeft">
+                        <div class="form-field boxAlign">
+                            <a class="weight">Weight (lbs)</a>
+                                <input type="text" id="weight" name="weight">
+                        </div>
+                        <div class="height">
+                            <a class="height">Height (ft' in")</a>
+                            <select id="height" name="height">
+                                <option></option>
+                                <option value="4,10">4'10" and under</option>
+                                <option value="4,11-5,1">4'11" - 5'1"</option>
+                                <option value="5,2-5,5">5'2" - 5'5"</option>
+                                <option value="5,6-5,10">5'6" - 5'10"</option>
+                                <option value="5,11-6,4">5'11" - 6'4"</option>
+                                <option value="6,5">6'5" and taller</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="columnsRight">
+                        <div class="form-field boxAlign skier_type">
+                            <a class="skier_type">Skier Type</a>
+                            <input type="radio" name="skier_type" id="skier_type1" value="1" class="checkbox" onclick="clearCheck()">1
+                            <input type="radio" name="skier_type" id="skier_type2" value="2" class="checkbox" onclick="clearCheck()">2
+                            <input type="radio" name="skier_type" id="skier_type3" value="3" class="checkbox" onclick="clearCheck()">3
+                            
+                        </div>
+                    </div>
+                    <div class="columnsRight">
+                        <div class="form-field boxAlign age">
+                            <a class="age">Age</a>
+                            <input type="number" name="age" id="age">
+                        </div>
+                    </div>
+            </fieldset>
+        </div>
+            <div id="boot_binding" style="display:none;">
+            <fieldset class="borderSep" >
+                <legend>Boot Info</legend>
+                    <div class="columnsLeft">
+                        <div class="form-field boxAlign">
+                            <a class="make">Make</a>
+                                <input type="text" name="boot_make" id="boot_make">
+                        </div>
+                        <div class="form-field boxAlign">
+                            <a class="mdl">Model</a>
+                            <input type="text" name="boot_mdl" id="boot_mdl">
+                        </div>
+                    </div>
+                    <div class="columnsRight">
+                        <div class="form-field boxAlign">
+                            <a class="bindings">Bindings</a>
+                            <input type="text" name="bindings" id="bindings">
+                        </div>
+                        <div class="form-field boxAlign">
+                            <a class="bootLength">Boot length(mm)</a>
+                            <input type="text" name="bootLength" id="bootLength">
+                        </div>
+                    </div>
+            </fieldset>
+            </div>
+            <div id="stance" style="display:none;">
+                <fieldset class="borderSep" >
+                    <legend>Stance Preference</legend>
+                        <div class="stance">
+                        <div class="columnsLeft">
+                            <div class="form-field boxAlign">
+                                <a class="goofy">Goofy</a>
+                            <input type="radio" name="stance" id="goofy" value="goofy" onclick="clearCheck()" class="stance">
+                        </div>
+                        </div> 
+                        <div class="columnsRight">
+                            <div class="form-field boxAlign">
+                                <a class="reg">Regular</a>
+                                <input type="radio" name="stance" id="regular" value="regular" onclick="clearCheck()" class="stance">
+                            </div>
+                        </div>
+                        </div>
+                </fieldset>
+                </div>
+            <fieldset class="borderSep">
+                <div class="columnsLeft">
+                    <div class="form-field boxAlign">
+                        <a class="notes">Notes For Tech</a>
+                        <textarea name="notes" id="notes" class="textArea"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+    <div id="loader"></div>
+
+<p id="re"></p>
+<div>
+    <footer>
+<input class="btn" type = "button"  id = "b1" onClick="insert_value()" value = "Insert" onclick="scrollTop"></input>
+<a class="link" href="https://docs.google.com/spreadsheets/d/1oSyH3aAoC_qkOxbQ5Uawlhux4bqlIaH90Q7xGdrltwM/edit#gid=0" target="_blank">Click here to open Spread Sheet </a>
+<div id="showData"></div>
+</div>
+</div>
+
+</footer>
+</html>
